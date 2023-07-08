@@ -1,11 +1,33 @@
 import React from "react";
 import Net from "./Elements/Net";
+import Rating from "./Elements/Rating";
+import Result from "./Elements/Result";
 
 function App() {
+  const [site, setSite] = React.useState(true)
+  const [rating, setRating] = React.useState(0);
+
+  function changeRating(event) {
+      setRating(event.target.value)
+      console.log(event.target.value)
+  }
+
+  function changeSite() {
+    setSite(false)
+  }
+
   return(
     <>
       <Net need=" " />
-      <h1>Sus</h1>
+      <main>
+        {site ?
+        <Rating 
+          changeSite={changeSite} 
+          changeRating={changeRating}
+        /> :
+        <Result rating={rating} />
+        }
+        </main>
     </>
   )
 }
