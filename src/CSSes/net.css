@@ -1,0 +1,15 @@
+table {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    white-space: 0px;
+    border-collapse: collapse;
+    z-index: 2;
+}
+
+tr, td {
+    width: auto;
+    height: auto;
+    border: 1px solid black;
+}
