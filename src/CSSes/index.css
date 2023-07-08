@@ -23,4 +23,13 @@ main {
   border-radius: 20px;
   background: radial-gradient(ellipse at top, hsl(215, 33%, 20%), hsl(215, 42%, 16%));
   padding: 2.0825%;
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 1050px) {
+  main {
+    width: calc(100%/12*8);
+    height: calc(100%/12*7);
+    padding: 6.2475%;
+  }
 }

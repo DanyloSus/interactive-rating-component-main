@@ -13,7 +13,7 @@ function App() {
   }
 
   function changeSite() {
-    setSite(false)
+    rating && setSite(false)
   }
 
   return(
