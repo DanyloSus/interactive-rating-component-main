@@ -3,11 +3,11 @@ import React from "react";
 function Rating({ changeRating, changeSite }) {
     return(
         <section className="rating">
-            <div className="star">
+            <div className="star" style={{animationDelay:"0.5s"}}>
                 <img src="icon-star.svg" />
             </div>
-            <h1>How did we do?</h1>
-            <p>
+            <h1 style={{animationDelay:"1s"}}>How did we do?</h1>
+            <p style={{animationDelay:"1.5s"}}>
                 Please let us know how we did with your
                 support request. All feedback is appreciated
                 to help us improve our offering!
@@ -20,7 +20,7 @@ function Rating({ changeRating, changeSite }) {
                     id="1" 
                     onChange={changeRating}
                 />
-                <label htmlFor="1">1</label>
+                <label htmlFor="1" style={{animationDelay:"1.75s"}}>1</label>
                 <input 
                     type="radio" 
                     name="rating" 
@@ -28,7 +28,7 @@ function Rating({ changeRating, changeSite }) {
                     id="2" 
                     onChange={changeRating}
                 />
-                <label htmlFor="2">2</label>
+                <label htmlFor="2" style={{animationDelay:"2s"}}>2</label>
                 <input 
                     type="radio" 
                     name="rating" 
@@ -36,7 +36,7 @@ function Rating({ changeRating, changeSite }) {
                     id="3" 
                     onChange={changeRating}
                 />
-                <label htmlFor="3">3</label>
+                <label htmlFor="3" style={{animationDelay:"2.25s"}}>3</label>
                 <input 
                     type="radio" 
                     name="rating" 
@@ -44,7 +44,7 @@ function Rating({ changeRating, changeSite }) {
                     id="4" 
                     onChange={changeRating}
                 />
-                <label htmlFor="4">4</label>
+                <label htmlFor="4" style={{animationDelay:"2.5s"}}>4</label>
                 <input 
                     type="radio" 
                     name="rating" 
@@ -52,10 +52,11 @@ function Rating({ changeRating, changeSite }) {
                     id="5" 
                     onChange={changeRating}
                 />
-                <label htmlFor="5">5</label>
+                <label htmlFor="5" style={{animationDelay:"2.75s"}}>5</label>
             </div>
             <button
                 onClick={changeSite}
+                style={{animationDelay:"3.25s"}}
             >Submit</button>
         </section>
     );

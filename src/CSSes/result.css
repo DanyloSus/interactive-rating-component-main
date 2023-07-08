@@ -8,6 +8,10 @@ section.results {
     text-align: center;
 }
 
+section.results * {
+    animation: textDown 1s both;
+}
+
 p.results {
     background-color: hsl(210, 42%, 22%);
     color: hsl(25, 97%, 53%);
@@ -23,4 +27,17 @@ section.results > h1 {
 section.results > p:not(.result) {
     font-size: 16px;
     line-height: 23px;
+}
+
+@keyframes textDown {
+    0% {
+        position: relative;
+        top: -20px;
+        opacity: 0;
+    }
+    100% {
+        position: relative;
+        top: 0px;
+        opacity: 1;
+    }
 }
